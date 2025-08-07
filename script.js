@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ease: "power3.out",
   });
 
-  gsap.from(".main-h2", {
+  gsap.from(".main-h2,.services-h2", {
     scrollTrigger: {
       trigger: ".main-h2",
       start: "top 80%",
@@ -38,14 +38,13 @@ document.addEventListener("DOMContentLoaded", function () {
       trigger: ".section p",
       start: "top 100%",
       toggleActions: "play none none none",
-    //   markers: true,
+      //   markers: true,
     },
     y: 50,
     opacity: 0,
     stagger: 0.2,
   });
   gsap.from("ul", {
-    
     y: 50,
     opacity: 0,
     stagger: 0.2,
